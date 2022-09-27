@@ -81,11 +81,11 @@ int main(int argc, char *argv[])
     printf("Please enter the message: ");
 
     bzero(buffer2, 1012);
-    // fgets(buffer2, 1011, stdin);
-    scanf("%c",buffer2);
+    fgets(buffer2, 1011, stdin);
+    // scanf("%c",buffer2);
 
 
-    strcpy(buffer2,"Task: Extend the following progr implement seß able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:Task: Extend the following programs to implement seamless chat application between client and server processes. Client and server should be able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:Task: Extend the following programs to implement seamless chat application between client and server processes. Client and server should be able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:");
+    // strcpy(buffer2,"Task: Extend the following progr implement seß able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:Task: Extend the following programs to implement seamless chat application between client and server processes. Client and server should be able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:Task: Extend the following programs to implement seamless chat application between client and server processes. Client and server should be able to send and receive messages of up to 1000 characters back and forth any number of times without quitting. Deliverables:");
     
     printf("buffer2 is: %s and its length: %lu\n",buffer2,strlen(buffer2));
     delay(1000);
@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
     if (n < 0) 
             error("ERROR reading from socket");
 
-
+    printf("%s\n",buffer2);
 
     return 0;
 }
